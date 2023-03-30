@@ -96,7 +96,8 @@
     });
 
     const CopyArray = () => {
-      navigator.clipboard.writeText(JSON.stringify(Images));
+      const clipboardData = JSON.stringify(Images);
+      navigator.clipboard.writeText(clipboardData);
       window.alert("Gallery data successfully copied.");
     };
     // script for particles
